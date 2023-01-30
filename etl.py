@@ -170,6 +170,10 @@ def initialize_db(clear: bool = False) -> None:
     Returns:
         None
     """
+    # TODO(Nick): We should normalize the schema further
+    # New table: museum_visits(museum_name, visitors_per_year, year_reported)
+    # Foreign key: museum_visits.museum_name -> museum.name
+
     conn = sqlite3.connect("museums.db")
     c = conn.cursor()
     if clear:
