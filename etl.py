@@ -174,6 +174,9 @@ def initialize_db(clear: bool = False) -> None:
     # New table: museum_visits(museum_name, visitors_per_year, year_reported)
     # Foreign key: museum_visits.museum_name -> museum.name
 
+    # TODO(Nick): We should have an id column for each table and use that as the primary key
+    # Currently we are using the name column as the primary key
+
     conn = sqlite3.connect("museums.db")
     c = conn.cursor()
     if clear:

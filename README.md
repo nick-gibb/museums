@@ -6,6 +6,23 @@ This repository contains a data pipeline and analysis of museum attendance data.
 
 The analysis is performed using a Jupyter Notebook (analysis.ipynb). The notebook contains a linear regression model that predicts the number of museum visitors based on the population of the city in which the museum is located. The results are also visualized for better understanding.
 
+## Schema
+
+Tables in Database Schema:
+
+`museum`:
+
+- name (text; primary key)
+- city (text)
+- visitors_per_year (integer)
+- year_reported (integer)
+
+`city`:
+    name (primary key)
+    population (integer)
+
+TODO: This schema should be further normalized by adding a museum_visit table that contains the number of visitors per year for each museum.
+
 ## Requirements
 
 - Docker (for running the ETL and analysis scripts)
