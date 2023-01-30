@@ -18,8 +18,9 @@ Tables in Database Schema:
 - year_reported (integer)
 
 `city`:
-    name (primary key)
-    population (integer)
+
+- name (primary key)
+- population (integer)
 
 TODO: This schema should be further normalized by adding a museum_visit table that contains the number of visitors per year for each museum.
 
