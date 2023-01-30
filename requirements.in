@@ -1,0 +1,11 @@
+requests
+seaborn
+numpy
+pandas
+lxml
+scikit-learn
+matplotlib
+jupyter
+python-dotenv
+black
+pytest
